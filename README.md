@@ -1,4 +1,4 @@
-"# Book Collection Api"
+<h1 align="center">Projeto de API para Gerenciamento de Livros</h1>
 
 ## 💻 Sobre o projeto
 
