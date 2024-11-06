@@ -1,5 +1,34 @@
 "# Book Collection Api"
 
+## 💻 Sobre o projeto
+
+<p align="justify">
+Este projeto é uma API RESTful desenvolvida com Django, que permite o gerenciamento de livros, incluindo a criação, avaliação, exclusão e sorteio de livros com base em filtros. O projeto utiliza Django Ninja para a criação da API e o Django ORM para a manipulação de dados no banco de dados.
+</p>
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="" title="#" src="https://github.com/Gelzieny/book_collection_api/blob/main/.github/img/endp.png?raw=true" width="400px">
+
+  <img alt="" title="#" src="https://github.com/Gelzieny/book_collection_api/blob/main/.github/img/image.png?raw=true" width="400px">
+</p>
+
+## 🔨 Funcionalidades do projeto
+
+- `Criar um Livro`: Cria um novo livro com base nos dados fornecidos (nome, streaming e categorias).
+- `Avaliar um Livro`: Atualiza a avaliação de um livro, incluindo a nota e os comentários.
+- `Deletar um Livro`: Deleta o livro com o ID fornecido.
+- `Sortear um Livro Aleatoriamente`: Sorteia um livro aleatoriamente com base nos filtros fornecidos (nota mínima, categorias e se o livro já foi assistido).
+- `Listar Todos os Livros`: Lista todos os livros cadastrados no banco de dados.
+- `Listar Todos os Categorias`: Lista todas as categorias cadastradas no banco de dados.
+
+## 🛠 Tecnologias
+
+<p align="justify">Este projeto utiliza um conjunto de tecnologias modernas para garantir uma aplicação eficiente e escalável, incluindo:</p>
+
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Django Ninja](https://django-ninja.dev/)
+
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
