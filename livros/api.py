@@ -5,6 +5,37 @@ from .schemas import AvaliacaoSchema, FiltrosSortear, LivroSchema
 
 
 livros_router = Router()
+categorias_router = Router()
+
+@categorias_router.get('/listar/')
+def listar_categorias(request):
+  categorias = Categorias.objects.all()
+
+  categorias_list = []
+
+  for i in categorias:
+    categorias_list.append({
+      'id': i.id,
+      'nome': i.nome
+    })
+
+  return {'Categorias': categorias_list}
+
+@livros_router.get('/listar/')
+def listar_livros(request):
+  livros = Livros.objects.all()
+
+  livros_list = []
+
+  for i in livros:
+    livros_list.append({
+      'id': i.id,
+      'nome': i.nome,
+      'nota': i.nota,
+      'comentario': i.comentarios
+    })
+
+  return {'Livros': livros_list}
 
 @livros_router.post('/', response={200: LivroSchema})
 def create_livros(request,  livro_schema: LivroSchema):
